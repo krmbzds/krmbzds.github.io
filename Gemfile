@@ -24,3 +24,6 @@ gem "middleman-google-analytics"
 
 # Email obfuscation
 gem 'middleman-protect-emails'
+
+# robots.txt extension
+gem 'middleman-robots'

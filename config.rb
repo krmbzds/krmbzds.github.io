@@ -86,6 +86,10 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  activate :robots, :rules => [
+    {:user_agent => '*', :disallow => %w(/)}
+  ] #,:sitemap => "http://example.com/sitemap.xml"
 end
 
 # Deployment configuration
