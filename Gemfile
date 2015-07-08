@@ -9,3 +9,6 @@ gem "middleman-livereload", "~> 3.1.0"
 
 # Time zone data
 gem "tzinfo-data", platforms: [:jruby]
+
+# Deploy Middleman build via git
+gem 'middleman-deploy', '~> 1.0'
