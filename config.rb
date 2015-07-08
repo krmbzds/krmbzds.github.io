@@ -14,6 +14,9 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-XXXXXXX-X'
 end
 
+# Email obfuscation
+activate :protect_emails
+
 ###
 # Compass
 ###
