@@ -2,7 +2,12 @@
 # Extensions
 ###
 
+# Title configuration
 activate :title, site: 'Your Website Name', separator: ' — '
+
+# Sitemap configuration
+set :url_root, 'http://example.com'
+activate :search_engine_sitemap, process_url: -> (url) { url.chomp('/') }
 
 ###
 # Compass

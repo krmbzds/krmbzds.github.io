@@ -15,3 +15,6 @@ gem 'middleman-deploy', '~> 1.0'
 
 # Set page titles
 gem 'middleman-title'
+
+# Add sitemap
+gem 'middleman-search_engine_sitemap'
