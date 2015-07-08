@@ -12,3 +12,6 @@ gem "tzinfo-data", platforms: [:jruby]
 
 # Deploy Middleman build via git
 gem 'middleman-deploy', '~> 1.0'
+
+# Set page titles
+gem 'middleman-title'
