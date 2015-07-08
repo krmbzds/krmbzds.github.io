@@ -9,6 +9,11 @@ activate :title, site: 'Your Website Name', separator: ' — '
 set :url_root, 'http://example.com'
 activate :search_engine_sitemap, process_url: -> (url) { url.chomp('/') }
 
+# Google Analytics configuration
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-XXXXXXX-X'
+end
+
 ###
 # Compass
 ###

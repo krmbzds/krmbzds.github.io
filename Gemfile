@@ -18,3 +18,6 @@ gem 'middleman-title'
 
 # Add sitemap
 gem 'middleman-search_engine_sitemap'
+
+# Google Analytics
+gem "middleman-google-analytics"
