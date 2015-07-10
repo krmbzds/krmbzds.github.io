@@ -125,7 +125,7 @@ GEM
     rails-assets-jquery (2.1.4)
     rails-assets-modernizr-ra (2.8.3)
     rails-assets-normalize-css (3.0.3)
-    rails-assets-open-sans-fontface (1.4.2)
+    rails-assets-open-sans (1.1.0)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -170,5 +170,5 @@ DEPENDENCIES
   rails-assets-jquery!
   rails-assets-modernizr-ra!
   rails-assets-normalize-css!
-  rails-assets-open-sans-fontface!
+  rails-assets-open-sans!
   tzinfo-data
