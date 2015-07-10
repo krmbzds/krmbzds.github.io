@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     activesupport (4.1.12)
       i18n (~> 0.6, >= 0.6.9)
@@ -40,6 +41,7 @@ GEM
     hitimes (1.2.2)
     hooks (0.4.0)
       uber (~> 0.0.4)
+    htmlcompressor (0.2.0)
     http_parser.rb (0.6.0)
     i18n (0.7.0)
     json (1.8.3)
@@ -83,6 +85,9 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-minify-html (3.4.1)
+      htmlcompressor (~> 0.2.0)
+      middleman-core (>= 3.2)
     middleman-protect-emails (0.3.1)
       middleman-core (~> 3.2)
     middleman-robots (1.1.0)
@@ -114,6 +119,13 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-bootstrap (3.3.5)
+      rails-assets-jquery (>= 1.9.1)
+    rails-assets-fontawesome (4.3.0)
+    rails-assets-jquery (2.1.4)
+    rails-assets-modernizr-ra (2.8.3)
+    rails-assets-normalize-css (3.0.3)
+    rails-assets-open-sans-fontface (1.4.2)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -148,8 +160,15 @@ DEPENDENCIES
   middleman-deploy (~> 1.0)
   middleman-google-analytics
   middleman-livereload (~> 3.1.0)
+  middleman-minify-html
   middleman-protect-emails
   middleman-robots
   middleman-search_engine_sitemap
   middleman-title
+  rails-assets-bootstrap!
+  rails-assets-fontawesome!
+  rails-assets-jquery!
+  rails-assets-modernizr-ra!
+  rails-assets-normalize-css!
+  rails-assets-open-sans-fontface!
   tzinfo-data

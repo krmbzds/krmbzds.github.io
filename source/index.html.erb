@@ -1,10 +1,12 @@
----
-title: Welcome to Middleman
----
+<div class="container">
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+    <!-- HEADLINE -->
+    <%= partial "headline" %>
+
+    <!-- RESUME -->
+    <div class="row">
+      <%= partial "left_pane" %>
+      <%= partial "right_pane" %>
+    </div>
+
+</div>

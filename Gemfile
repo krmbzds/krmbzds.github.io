@@ -27,3 +27,16 @@ gem 'middleman-protect-emails'
 
 # robots.txt extension
 gem 'middleman-robots'
+
+# Speed and optimization
+gem 'middleman-minify-html'
+
+# Rails Asset Management
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery'
+  gem 'rails-assets-modernizr-ra'
+  gem 'rails-assets-normalize-css'
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-fontawesome'
+  gem 'rails-assets-open-sans-fontface'
+end
