@@ -3,7 +3,7 @@
 ###
 
 # Title configuration
-activate :title, site: 'Your Website Name', separator: ' — '
+activate :title, site: 'Kerem Bozdaş', separator: ' — '
 
 # Sitemap configuration
 set :url_root, 'http://example.com'
