@@ -3,15 +3,15 @@
 ###
 
 # Title configuration
-activate :title, site: 'Your Website Name', separator: ' — '
+activate :title, site: 'Kerem Bozdaş', separator: ' — '
 
 # Sitemap configuration
-set :url_root, 'http://example.com'
+set :url_root, 'https://kerembozdas.com'
 activate :search_engine_sitemap, process_url: -> (url) { url.chomp('/') }
 
 # Google Analytics configuration
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-XXXXXXX-X'
+  ga.tracking_id = 'UA-45904377-3'
 end
 
 # Email obfuscation
