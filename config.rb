@@ -11,7 +11,7 @@ activate :search_engine_sitemap, process_url: -> (url) { url.chomp('/') }
 
 # Google Analytics configuration
 activate :google_analytics do |ga|
-  ga.tracking_id = 'UA-XXXXXXX-X'
+  ga.tracking_id = 'UA-45904377-3'
 end
 
 # Email obfuscation
