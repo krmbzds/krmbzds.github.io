@@ -35,4 +35,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-normalize-css'
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-fontawesome'
+  gem 'rails-assets-open-sans-fontface'
 end
