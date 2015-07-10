@@ -6,7 +6,7 @@
 activate :title, site: 'Kerem Bozdaş', separator: ' — '
 
 # Sitemap configuration
-set :url_root, 'http://example.com'
+set :url_root, 'https://kerembozdas.com'
 activate :search_engine_sitemap, process_url: -> (url) { url.chomp('/') }
 
 # Google Analytics configuration
