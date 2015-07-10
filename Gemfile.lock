@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     activesupport (4.1.12)
       i18n (~> 0.6, >= 0.6.9)
@@ -114,6 +115,12 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-bootstrap (3.3.5)
+      rails-assets-jquery (>= 1.9.1)
+    rails-assets-fontawesome (4.3.0)
+    rails-assets-jquery (2.1.4)
+    rails-assets-modernizr-ra (2.8.3)
+    rails-assets-normalize-css (3.0.3)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -152,4 +159,9 @@ DEPENDENCIES
   middleman-robots
   middleman-search_engine_sitemap
   middleman-title
+  rails-assets-bootstrap!
+  rails-assets-fontawesome!
+  rails-assets-jquery!
+  rails-assets-modernizr-ra!
+  rails-assets-normalize-css!
   tzinfo-data
