@@ -74,6 +74,9 @@ set :partials_dir, 'partials'
 # Build-specific configuration
 configure :build do
 
+  # GZIP Compression
+  activate :gzip
+
   # Minify HTML
   activate :minify_html do |html|
     html.remove_multi_spaces        = true   # Remove multiple spaces
@@ -93,7 +96,7 @@ configure :build do
     html.simple_boolean_attributes  = true   # Use simple boolean attributes
     html.preserve_patterns          = nil    # Patterns to preserve
   end
-  
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 
