@@ -3,10 +3,10 @@
 ###
 
 # Title configuration
-activate :title, site: 'Kerem Bozdaş', separator: ' — '
+activate :title, site: 'Kerem Bozdaş (krmbzds)', separator: ' — '
 
 # Sitemap configuration
-set :url_root, 'https://kerembozdas.com'
+set :url_root, 'http://kerembozdas.com'
 activate :search_engine_sitemap, process_url: -> (url) { url.chomp('/') }
 
 # Google Analytics configuration
