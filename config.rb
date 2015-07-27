@@ -114,7 +114,7 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 
   activate :robots, :rules => [
-    {:user_agent => '*', :disallow => %w(/)}
+    {:user_agent => '*', :allow => %w(/)}
   ] #,:sitemap => "http://example.com/sitemap.xml"
 
 end
