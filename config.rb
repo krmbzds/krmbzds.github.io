@@ -3,7 +3,7 @@
 ###
 
 # Title configuration
-activate :title, site: 'Kerem Bozdaş (krmbzds)', separator: ' — '
+activate :title, site: 'Kerem Bozdaş (krmbzds)', separator: ' - '
 
 # Sitemap configuration
 set :url_root, 'http://kerembozdas.com'
