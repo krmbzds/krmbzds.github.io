@@ -126,6 +126,7 @@ GEM
     rails-assets-modernizr-ra (2.8.3)
     rails-assets-normalize-css (3.0.3)
     rails-assets-open-sans (1.1.0)
+    rails-assets-zenorocha--clipboard.js (1.5.15)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -171,4 +172,8 @@ DEPENDENCIES
   rails-assets-modernizr-ra!
   rails-assets-normalize-css!
   rails-assets-open-sans!
+  rails-assets-zenorocha--clipboard.js!
   tzinfo-data
+
+BUNDLED WITH
+   1.13.6

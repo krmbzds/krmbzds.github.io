@@ -39,4 +39,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-fontawesome'
   gem 'rails-assets-open-sans'
+  gem 'rails-assets-zenorocha--clipboard.js'
 end

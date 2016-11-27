@@ -23,24 +23,46 @@
 )()
 
 # Place any jQuery/helper plugins in here.
-callback = ->
-  $(".item-skills").each ->
-    newWidth = $(this).parent().width() * $(this).data("percent")
+calculate_skills = ->
+  $('.item-skills').each ->
+    newWidth = undefined
+    newWidth = $(this).parent().width() * $(this).data('percent')
     $(this).width 0
-    $(this).animate
-      width: newWidth
-    , 1000
+    $(this).animate { width: newWidth }, 1000
 
-  $(".icons-red").each ->
+  $('.icons-red').each ->
+    height = undefined
     height = $(this).height()
-    $(this).animate
-      height: 14
-    , 2000
+    $(this).animate { height: 14 }, 2000
 
-$(document).ready callback
+# Calculate skills when document ready
+$(document).ready calculate_skills()
+
+# Initialize resize
 resize = undefined
+
+# Recalculate skills on resize
 window.onresize = ->
   clearTimeout resize
-  resize = setTimeout(->
-    callback()
-  , 100)
+  resize = setTimeout (-> calculate_skills()), 100
+
+# Get button element, set tooltip options
+button = $('#fingerprint').tooltip { trigger: 'manual', placement: 'bottom' }
+
+# Initialize clipboard to copy fingerprint on click
+clipboard = new Clipboard(document.getElementById('fingerprint'))
+
+# Show tooltip if copied to clipboard
+clipboard.on 'success', (e) ->
+  setTimeout (-> button.tooltip 'show' ), 300
+  setTimeout (-> button.tooltip 'hide' ), 1300
+
+# Download public key on click
+$('#publickey').on 'click', ->
+  window.location.assign('pubkey.asc')
+
+# Help icon to open gnupg.org
+$('#pgp-help').on 'click', ->
+  window.open('https://www.gnupg.org/', '_blank')
+
+
