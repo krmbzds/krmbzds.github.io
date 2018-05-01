@@ -46,23 +46,12 @@ window.onresize = ->
   clearTimeout resize
   resize = setTimeout (-> calculate_skills()), 100
 
-# Get button element, set tooltip options
-button = $('#fingerprint').tooltip { trigger: 'manual', placement: 'bottom' }
-
-# Initialize clipboard to copy fingerprint on click
-clipboard = new Clipboard(document.getElementById('fingerprint'))
-
-# Show tooltip if copied to clipboard
-clipboard.on 'success', (e) ->
-  setTimeout (-> button.tooltip 'show' ), 300
-  setTimeout (-> button.tooltip 'hide' ), 1300
-
 # Download public key on click
 $('#publickey').on 'click', ->
   window.location.assign('pubkey.asc')
 
-# Help icon to open gnupg.org
-$('#pgp-help').on 'click', ->
-  window.open('https://www.gnupg.org/', '_blank')
+# Help icon to open Keybase
+$('#keybase').on 'click', ->
+  window.open('https://keybase.io/encrypt#krmbzds', '_blank')
 
 
