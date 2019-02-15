@@ -72,6 +72,19 @@ set :images_dir, 'images'
 set :partials_dir, 'partials'
 set :fonts_dir, 'fonts'
 
+###
+# Misc
+###
+
+# Override ignored sitemap matchers to whitelist .well-known folder
+config.ignored_sitemap_matchers[:source_dotfiles] = proc { |file|
+  file =~ %r{/\.} && file !~ %r{/\.(well-known|htaccess|htpasswd|nojekyll)}
+}
+
+###
+# Build
+###
+
 # Build-specific configuration
 configure :build do
 
@@ -118,6 +131,10 @@ configure :build do
   ] #,:sitemap => "http://example.com/sitemap.xml"
 
 end
+
+###
+# Deployment
+###
 
 # Deployment configuration
 activate :deploy do |deploy|
