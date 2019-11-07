@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kerembozdas.com
+Token: 48735fa6d9ef629a06871b2dd1d840371ef9e4d893db5ade5c801869a6089f93
